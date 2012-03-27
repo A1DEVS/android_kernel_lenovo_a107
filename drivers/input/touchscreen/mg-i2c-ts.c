@@ -553,7 +553,7 @@ static const struct attribute_group mg_attr_group = {
 
 static void time_led_off(unsigned long _data)
 {
-	printk("=******MORGAN_TOUCH******* touch_led  off \n");
+//	printk("=******RANDY stfu pls*******\n");
 	light_touch_LED(TOUCH_LED, LED_OFF);
 }
 
@@ -875,7 +875,7 @@ if(command_flag == 1)
 		case 1:
 
 //				printk("=******MORGAN_TOUCH******* touch_led  on \n");
-				light_touch_LED(TOUCH_LED, LED_ON);
+//				light_touch_LED(TOUCH_LED, LED_ON);
 
 			home_flag = 1;
 			input_event(mg->dev, EV_KEY, KEY_HOME, 1);
@@ -887,7 +887,7 @@ if(command_flag == 1)
 		case 2:
 
 //				printk("=******MORGAN_TOUCH******* touch_led  on \n");
-				light_touch_LED(TOUCH_LED, LED_ON);
+//				light_touch_LED(TOUCH_LED, LED_ON);
 
 			back_flag = 1;
 			input_event(mg->dev, EV_KEY, KEY_BACK, 1);
@@ -898,7 +898,7 @@ if(command_flag == 1)
 		case 3:
 
 //				printk("=******MORGAN_TOUCH******* touch_led  on \n");
-				light_touch_LED(TOUCH_LED, LED_ON);
+//				light_touch_LED(TOUCH_LED, LED_ON);
 
 			menu_flag = 1;
 			input_event(mg->dev, EV_KEY, KEY_MENU, 1);
