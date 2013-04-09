@@ -446,6 +446,15 @@ config MACH_OMAP4_PANDA
 	select OMAP_REBOOT_REASON
 	select OMAP_RAM_CONSOLE
 
+config OMAP36XX_OVERCLOCK
+	bool "Enable OMAP36xx overclock frequency steps"
+	depends on ARCH_OMAP3
+	default n
+	help
+	  This will enable higher frequencies for the OMAP36XX platform.
+	  If nothing else is set, this will enable 1GHz on OPP4 and 1,1GHz
+	  on OPP5.
+
 config OMAP3_EMU
 	bool "OMAP3 debugging peripherals"
 	depends on ARCH_OMAP3
